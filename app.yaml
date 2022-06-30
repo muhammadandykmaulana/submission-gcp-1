@@ -1,0 +1,12 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: submission-1st-mandykm/index.html
+  upload: submission-1st-mandykm/index.html
+
+- url: /(.*)
+  static_files: submission-1st-mandykm/\1
+  upload: submission-1st-mandykm/(.*)
